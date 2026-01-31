@@ -1,0 +1,92 @@
+[
+  {
+    "pregunta": "¿Qué se considera un defecto en un proceso productivo?",
+    "opciones": [
+      "Un producto que no cumple con las especificaciones",
+      "Un producto costoso",
+      "Un producto con buen acabado"
+    ],
+    "respuesta": "Un producto que no cumple con las especificaciones"
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal de la inspección de calidad?",
+    "opciones": [
+      "Aumentar la producción",
+      "Detectar productos defectuosos",
+      "Reducir el número de empleados"
+    ],
+    "respuesta": "Detectar productos defectuosos"
+  },
+  {
+    "pregunta": "¿Qué es un estándar de calidad?",
+    "opciones": [
+      "Una meta de ventas",
+      "Un criterio que define cómo debe ser un producto o proceso",
+      "Un tipo de inspección visual"
+    ],
+    "respuesta": "Un criterio que define cómo debe ser un producto o proceso"
+  },
+  {
+    "pregunta": "¿Cuál es un ejemplo de mejora de la calidad?",
+    "opciones": [
+      "Aumentar el precio del producto",
+      "Reducir defectos mediante mejoras en el proceso",
+      "Producir más sin control"
+    ],
+    "respuesta": "Reducir defectos mediante mejoras en el proceso"
+  },
+  {
+    "pregunta": "¿Qué tipo de inspección se realiza durante el proceso productivo?",
+    "opciones": [
+      "Inspección final",
+      "Inspección en proceso",
+      "Inspección documental"
+    ],
+    "respuesta": "Inspección en proceso"
+  },
+  {
+    "pregunta": "¿Por qué son importantes los estándares básicos de calidad?",
+    "opciones": [
+      "Porque aumentan los costos",
+      "Porque aseguran uniformidad y cumplimiento",
+      "Porque eliminan la competencia"
+    ],
+    "respuesta": "Porque aseguran uniformidad y cumplimiento"
+  },
+  {
+    "pregunta": "¿Qué sucede si no se controla la calidad?",
+    "opciones": [
+      "Aumentan los defectos y reclamos",
+      "Mejora la productividad",
+      "Disminuyen los costos automáticamente"
+    ],
+    "respuesta": "Aumentan los defectos y reclamos"
+  },
+  {
+    "pregunta": "¿Cuál es una herramienta básica para mejorar la calidad?",
+    "opciones": [
+      "Capacitación del personal",
+      "Reducción de turnos",
+      "Aumento de horas extra"
+    ],
+    "respuesta": "Capacitación del personal"
+  },
+  {
+    "pregunta": "¿Qué busca la mejora continua?",
+    "opciones": [
+      "Cambios ocasionales",
+      "Mejorar procesos de forma constante",
+      "Eliminar inspecciones"
+    ],
+    "respuesta": "Mejorar procesos de forma constante"
+  },
+  {
+    "pregunta": "¿Qué relación existe entre calidad y satisfacción del cliente?",
+    "opciones": [
+      "No tienen relación",
+      "A mayor calidad, mayor satisfacción",
+      "La calidad solo importa internamente"
+    ],
+    "respuesta": "A mayor calidad, mayor satisfacción"
+  }
+]
