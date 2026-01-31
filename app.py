@@ -2,6 +2,12 @@ import streamlit as st
 import json
 import random
 
+st.set_page_config(
+    page_title="Quiz de Calidad",
+    page_icon="✅",
+    layout="centered"
+)
+
 st.title("Quiz de Calidad")
 st.caption("Proyecto final – Fundamentos de Programación | Guersom J. Arroyo")
 
