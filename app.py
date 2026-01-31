@@ -3,6 +3,7 @@ import json
 import random
 
 st.title("Quiz de Calidad - Guersom Arroyo")
+st.caption("Proyecto final – Fundamentos de Programación | Ingeniería Industrial")
 
 with open("preguntas.json", "r", encoding="utf-8") as f:
     preguntas = json.load(f)
