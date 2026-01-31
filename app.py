@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import random
 
-st.title("Quiz de Calidad - Ingeniería Industrial")
+st.title("Quiz de Calidad - Guersom Arroyo")
 
 with open("preguntas.json", "r", encoding="utf-8") as f:
     preguntas = json.load(f)
