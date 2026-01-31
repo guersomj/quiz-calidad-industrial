@@ -11,7 +11,7 @@ st.set_page_config(
 
 # ================= ENCABEZADO =================
 st.title("🧪 Quiz de Calidad")
-st.caption("Proyecto Final · Fundamentos de Programación · Ingeniería Industrial")
+st.caption("Proyecto Final · Fundamentos de Programación · Guersom J. Arroyo")
 st.divider()
 
 # ================= CARGA DE PREGUNTAS =================
