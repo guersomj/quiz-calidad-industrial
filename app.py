@@ -18,51 +18,35 @@ st.divider()
 with open("preguntas.json", "r", encoding="utf-8") as f:
     preguntas = json.load(f)
 
+TOTAL_PREGUNTAS_POR_PARTIDA = 4
+
 # ---------------- ESTADO INICIAL ----------------
 if "preguntas_seleccionadas" not in st.session_state:
-    st.session_state.preguntas_seleccionadas = random.sample(preguntas, 4)
+    st.session_state.preguntas_seleccionadas = random.sample(preguntas, TOTAL_PREGUNTAS_POR_PARTIDA)
     st.session_state.puntaje = 0
     st.session_state.pregunta_actual = 0
 
 # ---------------- QUIZ ----------------
-if st.session_state.pregunta_actual < 4:
-    p = st.session_state.preguntas_seleccionadas[st.session_state.pregunta_actual]
+if st.session_state.pregunta_actual < TOTAL_PREGUNTAS_POR_PARTIDA:
+    idx = st.session_state.pregunta_actual
+    p = st.session_state.preguntas_seleccionadas[idx]
 
-    # Barra de progreso
-    st.progress((st.session_state.pregunta_actual + 1) / 4)
+    # Contador + restantes
+    numero_pregunta = idx + 1
+    restantes = TOTAL_PREGUNTAS_POR_PARTIDA - numero_pregunta
+    st.markdown(f"### Pregunta {numero_pregunta} de {TOTAL_PREGUNTAS_POR_PARTIDA}")
+    st.caption(f"Te quedan {restantes} por responder.")
+    
+    # Progreso
+    st.progress(numero_pregunta / TOTAL_PREGUNTAS_POR_PARTIDA)
+    st.divider()
 
     st.subheader(p["pregunta"])
     opcion = st.radio(
         "Selecciona una opción:",
         p["opciones"],
-        key=st.session_state.pregunta_actual
+        key=f"q_{idx}"
     )
 
     if st.button("Responder"):
         if opcion == p["respuesta"]:
-            st.success("✅ Correcto")
-            st.session_state.puntaje += 1
-        else:
-            st.error("❌ Incorrecto")
-
-        st.session_state.pregunta_actual += 1
-        st.rerun()
-
-# ---------------- RESULTADO FINAL ----------------
-else:
-    st.divider()
-    st.subheader("📊 Resultado final")
-
-    calificacion = (st.session_state.puntaje / 4) * 10
-
-    st.metric(
-        label="Calificación",
-        value=f"{calificacion:.1f} / 10",
-        delta=f"{st.session_state.puntaje} de 4 correctas"
-    )
-
-    if st.button("🔄 Reiniciar"):
-        st.session_state.clear()
-        st.rerun()
-
-# -------------
